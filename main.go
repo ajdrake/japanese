@@ -23,9 +23,9 @@ func main() {
 }
 
 func Hiragana() (string, error) {
-	s := ""
-	s += fmt.Sprintf("%v  %v  %v  %v  %v\n\n", "a", "i", "u", "e", "o")
-	s += fmt.Sprintf("%v %v %v %v %v\n\n", a, i, u, e, o)
+	s := "```\n"
+	s += fmt.Sprintf(" %v  %v  %v  %v  %v\n\n", "a", "i", "u", "e", "o")
+	s += fmt.Sprintf(" %v %v %v %v %v\n\n", a, i, u, e, o)
 	s += fmt.Sprintf("k%v %v %v %v %v\n\n", ka, ki, ku, ke, ko)
 	s += fmt.Sprintf("s%v %v %v %v %v\n\n", sa, si, su, se, so)
 	s += fmt.Sprintf("t%v %v %v %v %v\n\n", ta, ti, tu, te, to)
@@ -34,7 +34,7 @@ func Hiragana() (string, error) {
 	s += fmt.Sprintf("m%v %v %v %v %v\n\n", ma, mi, mu, me, mo)
 	// Note that yi and ye do not exist in ひらがな
 	s += fmt.Sprintf("y%v    %v    %v\n\n", ya, yu, yo)
-	fmt.Println("remember r sounds like l in nihongo!")
+	s += "remember r sounds like l in nihongo\n\n"
 	s += fmt.Sprintf("r%v %v %v %v %v\n\n", ra, ri, ru, re, ro)
 	// Note that wi wu we wo do not exist in ひらがな
 	s += fmt.Sprintf("w%v            \n\n", wa)
@@ -56,7 +56,7 @@ func Hiragana() (string, error) {
 	s += fmt.Sprintf("gy%vu%vo%v\n\n", gya, gyu, gyo)
 	s += fmt.Sprintf("j%vu%vo%v\n\n", ja, ju, jo)
 	s += fmt.Sprintf("by%vu%vo%v\n\n", bya, byu, byo)
-	s += fmt.Sprintf("py%vu%vo%v\n\n", pya, pyu, pyo)
-
+	s += fmt.Sprintf("py%vu%vo%v\n", pya, pyu, pyo)
+	s += "```\n"
 	return s, nil
 }

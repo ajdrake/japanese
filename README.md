@@ -2,9 +2,10 @@
 https://ajdrake.github.io/japanese/
 
 
-a  i  u  e  o
+```
+ a  i  u  e  o
 
-あ い う え お
+ あ い う え お
 
 kか き く け こ
 
@@ -19,6 +20,8 @@ hは ひ ふ へ ほ
 mま み む め も
 
 yや    ゆ    よ
+
+remember r sounds like l in nihongo
 
 rら り る れ ろ
 
@@ -57,6 +60,6 @@ jじゃuじゅoじょ
 byびゃuびゅoびょ
 
 pyぴゃuぴゅoぴょ
-
+```
 
 

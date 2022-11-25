@@ -2,64 +2,63 @@
 https://ajdrake.github.io/japanese/
 
 
-```
+
  a  i  u  e  o
 
- あ い う え お
+ [あ](https://www.kakimashou.com/dictionary/character/あ) [い](https://www.kakimashou.com/dictionary/character/い) [う](https://www.kakimashou.com/dictionary/character/う) [え](https://www.kakimashou.com/dictionary/character/え) [お](https://www.kakimashou.com/dictionary/character/お)
 
-kか き く け こ
+k[か](https://www.kakimashou.com/dictionary/character/か) [き](https://www.kakimashou.com/dictionary/character/き) [く](https://www.kakimashou.com/dictionary/character/く) [け](https://www.kakimashou.com/dictionary/character/け) [こ](https://www.kakimashou.com/dictionary/character/こ)
 
-sさ し す せ そ
+s[さ](https://www.kakimashou.com/dictionary/character/さ) [し](https://www.kakimashou.com/dictionary/character/し) [す](https://www.kakimashou.com/dictionary/character/す) [せ](https://www.kakimashou.com/dictionary/character/せ) [そ](https://www.kakimashou.com/dictionary/character/そ)
 
-tた ち つ て と
+t[た](https://www.kakimashou.com/dictionary/character/た) [ち](https://www.kakimashou.com/dictionary/character/ち) [つ](https://www.kakimashou.com/dictionary/character/つ) [て](https://www.kakimashou.com/dictionary/character/て) [と](https://www.kakimashou.com/dictionary/character/と)
 
-nな に ぬ ね の
+n[な](https://www.kakimashou.com/dictionary/character/な) [に](https://www.kakimashou.com/dictionary/character/に) [ぬ](https://www.kakimashou.com/dictionary/character/ぬ) [ね](https://www.kakimashou.com/dictionary/character/ね) [の](https://www.kakimashou.com/dictionary/character/の)
 
-hは ひ ふ へ ほ
+h[は](https://www.kakimashou.com/dictionary/character/は) [ひ](https://www.kakimashou.com/dictionary/character/ひ) [ふ](https://www.kakimashou.com/dictionary/character/ふ) [へ](https://www.kakimashou.com/dictionary/character/へ) [ほ](https://www.kakimashou.com/dictionary/character/ほ)
 
-mま み む め も
+m[ま](https://www.kakimashou.com/dictionary/character/ま) [み](https://www.kakimashou.com/dictionary/character/み) [む](https://www.kakimashou.com/dictionary/character/む) [め](https://www.kakimashou.com/dictionary/character/め) [も](https://www.kakimashou.com/dictionary/character/も)
 
-yや    ゆ    よ
+y[や](https://www.kakimashou.com/dictionary/character/や)    [ゆ](https://www.kakimashou.com/dictionary/character/ゆ)    [よ](https://www.kakimashou.com/dictionary/character/よ)
 
 remember r sounds like l in nihongo
 
-rら り る れ ろ
+r[ら](https://www.kakimashou.com/dictionary/character/ら) [り](https://www.kakimashou.com/dictionary/character/り) [る](https://www.kakimashou.com/dictionary/character/る) [れ](https://www.kakimashou.com/dictionary/character/れ) [ろ](https://www.kakimashou.com/dictionary/character/ろ)
 
-wわ            
+w[わ](https://www.kakimashou.com/dictionary/character/わ)            
 
-nん            
+n[ん](https://www.kakimashou.com/dictionary/character/ん)            
 
-gが ぎ ぐ げ ご
+g[が](https://www.kakimashou.com/dictionary/character/が) [ぎ](https://www.kakimashou.com/dictionary/character/ぎ) [ぐ](https://www.kakimashou.com/dictionary/character/ぐ) [げ](https://www.kakimashou.com/dictionary/character/げ) [ご](https://www.kakimashou.com/dictionary/character/ご)
 
-zざjiじ ぐ げ ご
+z[ざ](https://www.kakimashou.com/dictionary/character/ざ)ji[じ](https://www.kakimashou.com/dictionary/character/じ) [ぐ](https://www.kakimashou.com/dictionary/character/ぐ) [げ](https://www.kakimashou.com/dictionary/character/げ) [ご](https://www.kakimashou.com/dictionary/character/ご)
 
-dだjiぢ づ で ど
+d[だ](https://www.kakimashou.com/dictionary/character/だ)ji[ぢ](https://www.kakimashou.com/dictionary/character/ぢ) [づ](https://www.kakimashou.com/dictionary/character/づ) [で](https://www.kakimashou.com/dictionary/character/で) [ど](https://www.kakimashou.com/dictionary/character/ど)
 
-bが ぎ ぐ べ ご
+b[が](https://www.kakimashou.com/dictionary/character/が) [ぎ](https://www.kakimashou.com/dictionary/character/ぎ) [ぐ](https://www.kakimashou.com/dictionary/character/ぐ) [べ](https://www.kakimashou.com/dictionary/character/べ) [ご](https://www.kakimashou.com/dictionary/character/ご)
 
-pぱ ぴ ぷ ぺ ぽ
+p[ぱ](https://www.kakimashou.com/dictionary/character/ぱ) [ぴ](https://www.kakimashou.com/dictionary/character/ぴ) [ぷ](https://www.kakimashou.com/dictionary/character/ぷ) [ぺ](https://www.kakimashou.com/dictionary/character/ぺ) [ぽ](https://www.kakimashou.com/dictionary/character/ぽ)
 
-kyaきゃuきゅoきょ
+kya[きゃ](https://www.kakimashou.com/dictionary/character/きゃ)u[きゅ](https://www.kakimashou.com/dictionary/character/きゅ)o[きょ](https://www.kakimashou.com/dictionary/character/きょ)
 
-shしゃuしゅoしょ
+sh[しゃ](https://www.kakimashou.com/dictionary/character/しゃ)u[しゅ](https://www.kakimashou.com/dictionary/character/しゅ)o[しょ](https://www.kakimashou.com/dictionary/character/しょ)
 
-chちゃuちゅoちょ
+ch[ちゃ](https://www.kakimashou.com/dictionary/character/ちゃ)u[ちゅ](https://www.kakimashou.com/dictionary/character/ちゅ)o[ちょ](https://www.kakimashou.com/dictionary/character/ちょ)
 
-nyにゃuにゅoにょ
+ny[にゃ](https://www.kakimashou.com/dictionary/character/にゃ)u[にゅ](https://www.kakimashou.com/dictionary/character/にゅ)o[にょ](https://www.kakimashou.com/dictionary/character/にょ)
 
-hyひゃuひゅoひょ
+hy[ひゃ](https://www.kakimashou.com/dictionary/character/ひゃ)u[ひゅ](https://www.kakimashou.com/dictionary/character/ひゅ)o[ひょ](https://www.kakimashou.com/dictionary/character/ひょ)
 
-myみゃuみゅoみょ
+my[みゃ](https://www.kakimashou.com/dictionary/character/みゃ)u[みゅ](https://www.kakimashou.com/dictionary/character/みゅ)o[みょ](https://www.kakimashou.com/dictionary/character/みょ)
 
-ryりゃuりゅoりょ
+ry[りゃ](https://www.kakimashou.com/dictionary/character/りゃ)u[りゅ](https://www.kakimashou.com/dictionary/character/りゅ)o[りょ](https://www.kakimashou.com/dictionary/character/りょ)
 
-gyぎゃuぎゅoぎょ
+gy[ぎゃ](https://www.kakimashou.com/dictionary/character/ぎゃ)u[ぎゅ](https://www.kakimashou.com/dictionary/character/ぎゅ)o[ぎょ](https://www.kakimashou.com/dictionary/character/ぎょ)
 
-jじゃuじゅoじょ
+j[じゃ](https://www.kakimashou.com/dictionary/character/じゃ)u[じゅ](https://www.kakimashou.com/dictionary/character/じゅ)o[じょ](https://www.kakimashou.com/dictionary/character/じょ)
 
-byびゃuびゅoびょ
+by[びゃ](https://www.kakimashou.com/dictionary/character/びゃ)u[びゅ](https://www.kakimashou.com/dictionary/character/びゅ)o[びょ](https://www.kakimashou.com/dictionary/character/びょ)
 
-pyぴゃuぴゅoぴょ
-```
+py[ぴゃ](https://www.kakimashou.com/dictionary/character/ぴゃ)u[ぴゅ](https://www.kakimashou.com/dictionary/character/ぴゅ)o[ぴょ](https://www.kakimashou.com/dictionary/character/ぴょ)
 
 

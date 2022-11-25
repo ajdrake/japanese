@@ -9,14 +9,14 @@ import (
 
 func main() {
 	e := echo.New()
-	e.GET("/", func(c echo.Context) error {
+	e.GET("/index", func(c echo.Context) error {
 		h, err := Hiragana()
 		if err != nil {
 			fmt.Errorf("unable to get hiragana alphabet due to %v", err)
 		}
 		return c.String(http.StatusOK, h)
 	})
-	e.Logger.Fatal(e.Start(":1323"))
+	e.Logger.Fatal(e.Start(":80"))
 
 }
 

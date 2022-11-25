@@ -3,19 +3,25 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/labstack/echo"
 )
 
 func main() {
 	e := echo.New()
+	h, err := Hiragana()
+	if err != nil {
+		fmt.Errorf("unable to get hiragana alphabet due to %v", err)
+	}
 	e.GET("/index", func(c echo.Context) error {
-		h, err := Hiragana()
-		if err != nil {
-			fmt.Errorf("unable to get hiragana alphabet due to %v", err)
-		}
+
 		return c.String(http.StatusOK, h)
 	})
+	err = os.WriteFile("README.md", []byte(h), 0755)
+	if err != nil {
+		fmt.Printf("Unable to write file: %v", err)
+	}
 	e.Logger.Fatal(e.Start(":80"))
 
 }

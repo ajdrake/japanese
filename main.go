@@ -16,6 +16,42 @@ func main() {
 	// })
 	content := "# Class notes\nhttps://ajdrake.github.io/japanese/\n\n\n"
 	content += h + "\n\n"
+
+	// TODO : add kanji
+	// TODO : add numbers 1-100, and higher
+	// TODO : add mastering the use of ni using time
+	// TODO : add time
+	// TODO : add vocabulary
+	// TODO : add greetings
+	
+	// Saying no with a sad face
+	// Sumimasen ga chotto…
+	// すみません が ちょっと…。
+
+	// はい よろこんで。 Yes, with my pleasure.
+	// Hai yorokonde.
+	// はい ぜひ。 Yes, I’d love to/Yes, by all means.
+	// Hai zahi.
+	// はい verb-ましょう。 Yes, let’s do verb.
+	// Hai –mashou.
+	// いいですね。Yes, that sounds good.
+	// Iidesu ne.
+	// ええ そうしましょう。 Yes, let’s do so.
+	// Ee sou shimashou.
+
+	// どようびに いっしょに アイスクリームを たべません か。
+	// Doyoobi ni issho 
+	// ni aisukuriimu
+	// o tabemasen ka.
+
+	// rejection with time
+	// B: ど よ う び は ち ょ っ と ・ ・ ・
+	// Doyoubi wa chotto....
+
+	// A:
+	// じゃぁ にちようび は どう です か。
+	// Jaa nichiyoubi wa dou desu ka.
+
 	err = os.WriteFile("README.md", []byte(content), 0755)
 	if err != nil {
 		fmt.Printf("Unable to write file: %v", err)

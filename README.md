@@ -11,7 +11,9 @@ Hijimemashite. Aaron desu.
 なまえわアアロンです。
 
 
-# Hiragana a  i  u  e  o
+# Hiragana
+
+ a  i  u  e  o
 
  [あ](https://www.kakimashou.com/dictionary/character/あ) [い](https://www.kakimashou.com/dictionary/character/い) [う](https://www.kakimashou.com/dictionary/character/う) [え](https://www.kakimashou.com/dictionary/character/え) [お](https://www.kakimashou.com/dictionary/character/お)
 

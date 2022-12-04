@@ -2,13 +2,13 @@
 https://ajdrake.github.io/japanese/
 
 
-How do you do? Aaron アーロン is my name
+How do you do? Aaron アアロン is my name
 
 Hijimemashite. Aaron desu.
 
-ひじめまして。アーロンですNamae wa Aaron desu
+ひじめまして。アアロンですNamae wa Aaron desu
 
-なまえわアーロンです。
+なまえわアアロンです。
 
 
 # Hiragana a  i  u  e  o

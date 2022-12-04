@@ -83,7 +83,7 @@ const (
 	// z
 	za string = "ざ"
 	ji string = "じ"
-	zu string = "ぐ"
+	zu string = "ず"
 	ze string = "げ"
 	zo string = "ご"
 

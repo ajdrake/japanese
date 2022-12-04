@@ -67,7 +67,7 @@ func Hiragana() (string, error) {
 	s += "ひじめまして。アアロンです"
 	s += "Namae wa Aaron desu\n\n"
 	s += "なまえわアアロンです。\n\n"
-	s += "\n# Hiragana"
+	s += "\n# Hiragana\n\n"
 	s += fmt.Sprintf(" %v  %v  %v  %v  %v\n\n", "a", "i", "u", "e", "o")
 	s += fmt.Sprintf(" %v %v %v %v %v\n\n", link(a), link(i), link(u), link(e), link(o))
 	s += fmt.Sprintf("k%v %v %v %v %v\n\n", link(ka), link(ki), link(ku), link(ke), link(ko))

@@ -62,7 +62,12 @@ func link(character string) string {
 }
 func Hiragana() (string, error) {
 	// s := "```\n"
-	s := "\n# Hiragana"
+	s := "How do you do? Aaron アーロン is my name\n\n"
+	s += "Hijimemashite. Aaron desu.\n\n"
+	s += "ひじめまして。アーロンです"
+	s += "Namae wa Aaron desu\n\n"
+	s += "なまえわアーロンです。\n\n"
+	s += "\n# Hiragana"
 	s += fmt.Sprintf(" %v  %v  %v  %v  %v\n\n", "a", "i", "u", "e", "o")
 	s += fmt.Sprintf(" %v %v %v %v %v\n\n", link(a), link(i), link(u), link(e), link(o))
 	s += fmt.Sprintf("k%v %v %v %v %v\n\n", link(ka), link(ki), link(ku), link(ke), link(ko))
@@ -98,7 +103,12 @@ func Hiragana() (string, error) {
 	s += fmt.Sprintf("py%vu%vo%v\n", link(pya), link(pyu), link(pyo))
 	s += "\n\n"
 	s += "# Greetings"
-	s += "\n\nGood morning\t Konnichiwa \t こんにちわ"
-	s += "\n\nIs that so \t Sou desu ka\t そうですか"
+	s += "\n\nHello\t Konnichiwa \t こんにちわ。"
+	s += "\n\nGood morning\t Ohayoo\t おはよう。"
+	s += "\n\nOyaho gozaimasu\tおはようございます。"
+	s += "\n\nThank you very much\t Arigato gozaimasu\t ありがとございます。"
+	s += "\n\nIs that so \t Sou desu ka\t そうですか。"
+	s += "\n\nExcuse me\\I am sorry \t Sumimasen \t すみません"
+	s += "\n\nNo (the primary negative reply), Don't mention it, You're welcome\t Iie \t いいえ"
 	return s, nil
 }

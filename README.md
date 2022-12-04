@@ -2,6 +2,8 @@
 https://ajdrake.github.io/japanese/
 
 
+Aaron アーロン is my name
+
 
 # Hiragana a  i  u  e  o
 
@@ -64,7 +66,17 @@ py[ぴゃ](https://www.kakimashou.com/dictionary/character/ぴゃ)u[ぴゅ](http
 
 # Greetings
 
-Good morning	 Konnichiwa 	 こんにちわ
+Hello	 Konnichiwa 	 こんにちわ。
 
-Is that so 	 Sou desu ka	 そうですか
+Good morning	 Ohayoo	 おはよう。
+
+Oyaho gozaimasu	おはようございます。
+
+Thank you very much	 Arigato gozaimasu	 ありがとございます。
+
+Is that so 	 Sou desu ka	 そうですか。
+
+Excuse me\I am sorry 	 Sumimasen 	 すみません
+
+No (the primary negative reply), Don't mention it, You're welcome	 Iie 	 いいえ
 

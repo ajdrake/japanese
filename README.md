@@ -31,7 +31,7 @@ n[ん](https://www.kakimashou.com/dictionary/character/ん)
 
 g[が](https://www.kakimashou.com/dictionary/character/が) [ぎ](https://www.kakimashou.com/dictionary/character/ぎ) [ぐ](https://www.kakimashou.com/dictionary/character/ぐ) [げ](https://www.kakimashou.com/dictionary/character/げ) [ご](https://www.kakimashou.com/dictionary/character/ご)
 
-z[ざ](https://www.kakimashou.com/dictionary/character/ざ)ji[じ](https://www.kakimashou.com/dictionary/character/じ) [ぐ](https://www.kakimashou.com/dictionary/character/ぐ) [げ](https://www.kakimashou.com/dictionary/character/げ) [ご](https://www.kakimashou.com/dictionary/character/ご)
+z[ざ](https://www.kakimashou.com/dictionary/character/ざ)ji[じ](https://www.kakimashou.com/dictionary/character/じ) [ず](https://www.kakimashou.com/dictionary/character/ず) [げ](https://www.kakimashou.com/dictionary/character/げ) [ご](https://www.kakimashou.com/dictionary/character/ご)
 
 d[だ](https://www.kakimashou.com/dictionary/character/だ)ji[ぢ](https://www.kakimashou.com/dictionary/character/ぢ) [づ](https://www.kakimashou.com/dictionary/character/づ) [で](https://www.kakimashou.com/dictionary/character/で) [ど](https://www.kakimashou.com/dictionary/character/ど)
 

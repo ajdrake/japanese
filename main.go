@@ -62,11 +62,11 @@ func link(character string) string {
 }
 func Hiragana() (string, error) {
 	// s := "```\n"
-	s := "How do you do? Aaron アーロン is my name\n\n"
+	s := "How do you do? Aaron アアロン is my name\n\n"
 	s += "Hijimemashite. Aaron desu.\n\n"
-	s += "ひじめまして。アーロンです"
+	s += "ひじめまして。アアロンです"
 	s += "Namae wa Aaron desu\n\n"
-	s += "なまえわアーロンです。\n\n"
+	s += "なまえわアアロンです。\n\n"
 	s += "\n# Hiragana"
 	s += fmt.Sprintf(" %v  %v  %v  %v  %v\n\n", "a", "i", "u", "e", "o")
 	s += fmt.Sprintf(" %v %v %v %v %v\n\n", link(a), link(i), link(u), link(e), link(o))

@@ -23,7 +23,7 @@ func main() {
 	// TODO : add time
 	// TODO : add vocabulary
 	// TODO : add greetings
-	
+
 	// Saying no with a sad face
 	// Sumimasen ga chotto…
 	// すみません が ちょっと…。
@@ -40,7 +40,7 @@ func main() {
 	// Ee sou shimashou.
 
 	// どようびに いっしょに アイスクリームを たべません か。
-	// Doyoobi ni issho 
+	// Doyoobi ni issho
 	// ni aisukuriimu
 	// o tabemasen ka.
 
@@ -62,7 +62,7 @@ func link(character string) string {
 }
 func Hiragana() (string, error) {
 	// s := "```\n"
-	s := "\n"
+	s := "\n# Hiragana"
 	s += fmt.Sprintf(" %v  %v  %v  %v  %v\n\n", "a", "i", "u", "e", "o")
 	s += fmt.Sprintf(" %v %v %v %v %v\n\n", link(a), link(i), link(u), link(e), link(o))
 	s += fmt.Sprintf("k%v %v %v %v %v\n\n", link(ka), link(ki), link(ku), link(ke), link(ko))
@@ -73,7 +73,7 @@ func Hiragana() (string, error) {
 	s += fmt.Sprintf("m%v %v %v %v %v\n\n", link(ma), link(mi), link(mu), link(me), link(mo))
 	// Note that yi and ye do not exist in ひらがな
 	s += fmt.Sprintf("y%v    %v    %v\n\n", link(ya), link(yu), link(yo))
-	s += "remember r sounds like l in nihongo\n\n"
+	s += "remember r sounds like l in　にほんご\n\n"
 	s += fmt.Sprintf("r%v %v %v %v %v\n\n", link(ra), link(ri), link(ru), link(re), link(ro))
 	// Note that wi wu we wo do not exist in ひらがな
 	s += fmt.Sprintf("w%v            \n\n", link(wa))
@@ -96,6 +96,9 @@ func Hiragana() (string, error) {
 	s += fmt.Sprintf("j%vu%vo%v\n\n", link(ja), link(ju), link(jo))
 	s += fmt.Sprintf("by%vu%vo%v\n\n", link(bya), link(byu), link(byo))
 	s += fmt.Sprintf("py%vu%vo%v\n", link(pya), link(pyu), link(pyo))
-	// s += "```\n"
+	s += "\n\n"
+	s += "# Greetings"
+	s += "\n\nGood morning\t Konnichiwa \t こんにちわ"
+	s += "\n\nIs that so \t Sou desu ka\t そうですか"
 	return s, nil
 }

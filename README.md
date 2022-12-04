@@ -3,7 +3,7 @@ https://ajdrake.github.io/japanese/
 
 
 
- a  i  u  e  o
+# Hiragana a  i  u  e  o
 
  [あ](https://www.kakimashou.com/dictionary/character/あ) [い](https://www.kakimashou.com/dictionary/character/い) [う](https://www.kakimashou.com/dictionary/character/う) [え](https://www.kakimashou.com/dictionary/character/え) [お](https://www.kakimashou.com/dictionary/character/お)
 
@@ -21,7 +21,7 @@ m[ま](https://www.kakimashou.com/dictionary/character/ま) [み](https://www.ka
 
 y[や](https://www.kakimashou.com/dictionary/character/や)    [ゆ](https://www.kakimashou.com/dictionary/character/ゆ)    [よ](https://www.kakimashou.com/dictionary/character/よ)
 
-remember r sounds like l in nihongo
+remember r sounds like l in　にほんご
 
 r[ら](https://www.kakimashou.com/dictionary/character/ら) [り](https://www.kakimashou.com/dictionary/character/り) [る](https://www.kakimashou.com/dictionary/character/る) [れ](https://www.kakimashou.com/dictionary/character/れ) [ろ](https://www.kakimashou.com/dictionary/character/ろ)
 
@@ -61,4 +61,10 @@ by[びゃ](https://www.kakimashou.com/dictionary/character/びゃ)u[びゅ](http
 
 py[ぴゃ](https://www.kakimashou.com/dictionary/character/ぴゃ)u[ぴゅ](https://www.kakimashou.com/dictionary/character/ぴゅ)o[ぴょ](https://www.kakimashou.com/dictionary/character/ぴょ)
 
+
+# Greetings
+
+Good morning	 Konnichiwa 	 こんにちわ
+
+Is that so 	 Sou desu ka	 そうですか
 

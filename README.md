@@ -88,3 +88,9 @@ Excuse me\I am sorry 	 Sumimasen 	 すみません
 
 No (the primary negative reply), Don't mention it, You're welcome	 Iie 	 いいえ
 
+# Katakana
+
+[ア](https://www.kakimashou.com/dictionary/character/ア)
+
+
+

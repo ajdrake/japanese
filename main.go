@@ -120,7 +120,8 @@ func Hiragana() (string, error) {
 }
 
 func Katakana() (string, error) {
-	s := "# Katakana"
+	s := "# Katakana\n\n"
 	s += fmt.Sprint(link(katakana["a"]))
+	s += "\n\n"
 	return s, nil
 }

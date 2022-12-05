@@ -10,12 +10,17 @@ func main() {
 	if err != nil {
 		fmt.Errorf("unable to get hiragana alphabet due to %v", err)
 	}
+	k, err := Katakana()
+	if err != nil {
+		fmt.Errorf("unable to get katakana alphabet due to %v", err)
+	}
 	// e.GET("/index", func(c echo.Context) error {
 
 	// 	return c.String(http.StatusOK, h)
 	// })
 	content := "# Class notes\nhttps://ajdrake.github.io/japanese/\n\n\n"
 	content += h + "\n\n"
+	content += k + "\n\n"
 
 	// TODO : add kanji
 	// TODO : add numbers 1-100, and higher
@@ -26,8 +31,7 @@ func main() {
 
 	// Saying no with a sad face
 	// Sumimasen ga chotto…
-	// すみません が ちょっと…。
-
+	// すみません が ちょっと
 	// はい よろこんで。 Yes, with my pleasure.
 	// Hai yorokonde.
 	// はい ぜひ。 Yes, I’d love to/Yes, by all means.
@@ -60,6 +64,7 @@ func main() {
 func link(character string) string {
 	return fmt.Sprintf("[%v](https://www.kakimashou.com/dictionary/character/%v)", character, character)
 }
+
 func Hiragana() (string, error) {
 	// s := "```\n"
 	s := "How do you do? Aaron アアロン is my name\n\n"
@@ -111,5 +116,11 @@ func Hiragana() (string, error) {
 	s += "\n\nIs that so \t Sou desu ka\t そうですか。"
 	s += "\n\nExcuse me\\I am sorry \t Sumimasen \t すみません"
 	s += "\n\nNo (the primary negative reply), Don't mention it, You're welcome\t Iie \t いいえ"
+	return s, nil
+}
+
+func Katakana() (string, error) {
+	s := "# Katakana"
+	s += fmt.Sprint(link(katakana["a"]))
 	return s, nil
 }

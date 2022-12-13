@@ -31,53 +31,47 @@ func main() {
 	if err != nil {
 		fmt.Printf("unable to get phrases due to %v", err)
 	}
+	p2, err := Particles()
 	content := "# Class notes\nhttps://ajdrake.github.io/japanese/\n\n\n"
 	content += h + "\n\n"
 	content += k + "\n\n"
 	content += g + "\n\n"
 	content += p + "\n\n"
-
-	// Saying no with a sad face
-	// Sumimasen ga chotto…
-	// すみません が ちょっと
-	// はい よろこんで。 Yes, with my pleasure.
-	// Hai yorokonde.
-	// はい ぜひ。 Yes, I’d love to/Yes, by all means.
-	// Hai zahi.
-	// はい verb-ましょう。 Yes, let’s do verb.
-	// Hai –mashou.
-	// いいですね。Yes, that sounds good.
-	// Iidesu ne.
-	// ええ そうしましょう。 Yes, let’s do so.
-	// Ee sou shimashou.
-
-	// どようびに いっしょに アイスクリームを たべません か。
-	// Doyoobi ni issho
-	// ni aisukuriimu
-	// o tabemasen ka.
-
-	// rejection with time
-	// B: ど よ う び は ち ょ っ と ・ ・ ・
-	// Doyoubi wa chotto....
-
-	// A:
-	// じゃぁ にちようび は どう です か。
-	// Jaa nichiyoubi wa dou desu ka.
-
-	//
-	// Adverbs, frequency
-	// page 85
-	//
-	// positives
-	// mainichi="まいにさ" 100%
-	// taitei="たいてい" 80%
-	// yoku="よく" 60%
-	// tokudoki 50%
-	//
-	// negatives
-	// amari="あまり" 10%　+ ikimasen = "いきません"
-	// zenzen="ぜんぜん" 10%　+ ikimasen = "いきません"
-	//
+	content += p2 + "\n\n"
+	content += "## Response phrases\n\n"
+	content += "Saying no with a sad face\n\n"
+	content += "Sumimasen ga chotto…content\n\n"
+	content += "すみません が ちょっとcontent\n\n"
+	content += "はい よろこんで。 Yes, with my pleasure.content\n\n"
+	content += "Hai yorokonde.\n\n"
+	content += "はい ぜひ。 Yes, I’d love to/Yes, by all means.\n\n"
+	content += "Hai zahi.\n\n"
+	content += "はい verb-ましょう。 Yes, let’s do verb.\n\n"
+	content += "Hai –mashou.\n\n"
+	content += "いいですね。Yes, that sounds good.\n\n"
+	content += "Iidesu ne.\n\n"
+	content += "ええ そうしましょう。 Yes, let’s do so.\n\n"
+	content += "Ee sou shimashou.\n\n"
+	content += "どようびに いっしょに アイスクリームを たべません か。\n\n"
+	content += "Doyoobi ni issho\n\n"
+	content += "ni aisukuriimu\n\n"
+	content += "o tabemasen ka.\n\n"
+	content += "rejection with time\n\n"
+	content += "B: ど よ う び は ち ょ っ と ・ ・ ・\n\n"
+	content += "Doyoubi wa chotto....\n\n"
+	content += "A:\n\n"
+	content += "じゃぁ にちようび は どう です か。\n\n"
+	content += "Jaa nichiyoubi wa dou desu ka.\n\n"
+	content += "Adverbs, frequency\n\n"
+	content += "page 85\n\n"
+	content += "positives\n\n"
+	content += "mainichi=\"まいにさ\" 100%\n\n"
+	content += "taitei=\"たいてい\" 80%\n\n"
+	content += "yoku=\"よく\" 60%\n\n"
+	content += "tokudoki 50%\n\n"
+	content += "negatives\n\n"
+	content += "amari=\"あまり\" 10%　+ ikimasen = \"いきません\"\n\n"
+	content += "zenzen=\"ぜんぜん\" 10%　+ ikimasen = \"いきません\"\n\n"
 
 	err = os.WriteFile("README.md", []byte(content), 0755)
 	if err != nil {
@@ -99,22 +93,6 @@ func Hiragana() (string, error) {
 	s += "[Japan Society](https://www.japansociety.org)\n\n"
 	s += "[Genki Textbook Study Resources](https://sethclydesdale.github.io/genki-study-resources/lessons-3rd)"
 	s += "\n# Hiragana\n\n"
-	// s += Line("aiueo") + "\n\n"
-	// s += Line("かきくけこ") + "\n\n"
-	// s += Line("さしすせそ") + "\n\n"
-	// s += Line("たちつてと") + "\n\n"
-	// s += Line("なにぬねの") + "\n\n"
-	// s += Line("はひふへほ") + "\n\n"
-	// s += Line("まみむめも") + "\n\n"
-	// s += Line("や ゆ　よ") + "\n\n"
-	// s += Line("らりるれろ") + "\n\n"
-	// s += Line("") + "\n\n"
-	// s += Line("") + "\n\n"
-	// s += Line("") + "\n\n"
-	// s += Line("") + "\n\n"
-	// s += Line("") + "\n\n"
-	// s += Line("") + "\n\n"
-
 	s += fmt.Sprintf(" %v  %v  %v  %v  %v\n\n", "a", "i", "u", "e", "o")
 	s += fmt.Sprintf(" %v %v %v %v %v\n\n", link(a), link(i), link(u), link(e), link(o))
 	s += fmt.Sprintf("k%v %v %v %v %v\n\n", link(ka), link(ki), link(ku), link(ke), link(ko))
@@ -173,6 +151,12 @@ func Phrases() (string, error) {
 	s += "\n\nIs that so \t Sou desu ka\t そうですか。"
 	s += "\n\nExcuse me\\I am sorry \t Sumimasen \t すみません"
 	s += "\n\nNo (the primary negative reply), Don't mention it, You're welcome\t Iie \t いいえ"
+	return s, nil
+}
+
+func Particles() (string, error) {
+	s := "## Particles\n\n"
+	s += "と is a connector word like \"and.\" Aaron and Aki. Aaron と Aki."
 	return s, nil
 }
 

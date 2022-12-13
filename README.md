@@ -102,3 +102,75 @@ Excuse me\I am sorry 	 Sumimasen 	 すみません
 
 No (the primary negative reply), Don't mention it, You're welcome	 Iie 	 いいえ
 
+## Particles
+
+と is a connector word like "and." Aaron and Aki. Aaron と Aki.
+
+## Response phrases
+
+Saying no with a sad face
+
+Sumimasen ga chotto…content
+
+すみません が ちょっとcontent
+
+はい よろこんで。 Yes, with my pleasure.content
+
+Hai yorokonde.
+
+はい ぜひ。 Yes, I’d love to/Yes, by all means.
+
+Hai zahi.
+
+はい verb-ましょう。 Yes, let’s do verb.
+
+Hai –mashou.
+
+いいですね。Yes, that sounds good.
+
+Iidesu ne.
+
+ええ そうしましょう。 Yes, let’s do so.
+
+Ee sou shimashou.
+
+どようびに いっしょに アイスクリームを たべません か。
+
+Doyoobi ni issho
+
+ni aisukuriimu
+
+o tabemasen ka.
+
+rejection with time
+
+B: ど よ う び は ち ょ っ と ・ ・ ・
+
+Doyoubi wa chotto....
+
+A:
+
+じゃぁ にちようび は どう です か。
+
+Jaa nichiyoubi wa dou desu ka.
+
+Adverbs, frequency
+
+page 85
+
+positives
+
+mainichi="まいにさ" 100%
+
+taitei="たいてい" 80%
+
+yoku="よく" 60%
+
+tokudoki 50%
+
+negatives
+
+amari="あまり" 10%　+ ikimasen = "いきません"
+
+zenzen="ぜんぜん" 10%　+ ikimasen = "いきません"
+

@@ -139,7 +139,7 @@ func Line(s string) string {
 }
 func Greetings() (string, error) {
 	s := "# Greetings"
-	s += "\n\nHello\t Konnichiwa \t こんにちわ。"
+	s += "\n\nHello\t Konnichiwa \t こんにちは。"
 	s += "\n\nGood morning\t Ohayoo\t おはよう。"
 	s += "\n\nOyaho gozaimasu\tおはようございます。"
 	return s, nil

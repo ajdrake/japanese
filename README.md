@@ -11,6 +11,8 @@ Hijimemashite. Aaron desu.
 なまえわアアロンです。
 
 [Japan Society](https://www.japansociety.org)
+
+[Genki Textbook Study Resources](https://sethclydesdale.github.io/genki-study-resources/lessons-3rd)
 # Hiragana
 
  a  i  u  e  o
@@ -74,11 +76,23 @@ py[ぴゃ](https://www.kakimashou.com/dictionary/character/ぴゃ)u[ぴゅ](http
 
 # Greetings
 
+
+
+# Katakana
+
+[ア](https://www.kakimashou.com/dictionary/character/ア)
+
+
+
+# Greetings
+
 Hello	 Konnichiwa 	 こんにちわ。
 
 Good morning	 Ohayoo	 おはよう。
 
 Oyaho gozaimasu	おはようございます。
+
+## Common Phrases
 
 Thank you very much	 Arigato gozaimasu	 ありがとございます。
 
@@ -87,10 +101,4 @@ Is that so 	 Sou desu ka	 そうですか。
 Excuse me\I am sorry 	 Sumimasen 	 すみません
 
 No (the primary negative reply), Don't mention it, You're welcome	 Iie 	 いいえ
-
-# Katakana
-
-[ア](https://www.kakimashou.com/dictionary/character/ア)
-
-
 

@@ -3,31 +3,39 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 )
 
 func main() {
-	h, err := Hiragana()
-	if err != nil {
-		fmt.Errorf("unable to get hiragana alphabet due to %v", err)
-	}
-	k, err := Katakana()
-	if err != nil {
-		fmt.Errorf("unable to get katakana alphabet due to %v", err)
-	}
-	// e.GET("/index", func(c echo.Context) error {
-
-	// 	return c.String(http.StatusOK, h)
-	// })
-	content := "# Class notes\nhttps://ajdrake.github.io/japanese/\n\n\n"
-	content += h + "\n\n"
-	content += k + "\n\n"
 
 	// TODO : add kanji
 	// TODO : add numbers 1-100, and higher
 	// TODO : add mastering the use of ni using time
 	// TODO : add time
 	// TODO : add vocabulary
-	// TODO : add greetings
+	// TODO : add page 127 for days, weeks, months, years, time
+
+	h, err := Hiragana()
+	if err != nil {
+		fmt.Printf("unable to get hiragana alphabet due to %v", err)
+	}
+	k, err := Katakana()
+	if err != nil {
+		fmt.Printf("unable to get katakana alphabet due to %v", err)
+	}
+	g, err := Greetings()
+	if err != nil {
+		fmt.Printf("unable to get greetings due to %v", err)
+	}
+	p, err := Phrases()
+	if err != nil {
+		fmt.Printf("unable to get phrases due to %v", err)
+	}
+	content := "# Class notes\nhttps://ajdrake.github.io/japanese/\n\n\n"
+	content += h + "\n\n"
+	content += k + "\n\n"
+	content += g + "\n\n"
+	content += p + "\n\n"
 
 	// Saying no with a sad face
 	// Sumimasen ga chotto…
@@ -56,11 +64,27 @@ func main() {
 	// じゃぁ にちようび は どう です か。
 	// Jaa nichiyoubi wa dou desu ka.
 
+	//
+	// Adverbs, frequency
+	// page 85
+	//
+	// positives
+	// mainichi="まいにさ" 100%
+	// taitei="たいてい" 80%
+	// yoku="よく" 60%
+	// tokudoki 50%
+	//
+	// negatives
+	// amari="あまり" 10%　+ ikimasen = "いきません"
+	// zenzen="ぜんぜん" 10%　+ ikimasen = "いきません"
+	//
+
 	err = os.WriteFile("README.md", []byte(content), 0755)
 	if err != nil {
 		fmt.Printf("Unable to write file: %v", err)
 	}
 }
+
 func link(character string) string {
 	return fmt.Sprintf("[%v](https://www.kakimashou.com/dictionary/character/%v)", character, character)
 }
@@ -72,8 +96,25 @@ func Hiragana() (string, error) {
 	s += "ひじめまして。アアロンです"
 	s += "Namae wa Aaron desu\n\n"
 	s += "なまえわアアロンです。\n\n"
-	s += "[Japan Society](https://www.japansociety.org)"
+	s += "[Japan Society](https://www.japansociety.org)\n\n"
+	s += "[Genki Textbook Study Resources](https://sethclydesdale.github.io/genki-study-resources/lessons-3rd)"
 	s += "\n# Hiragana\n\n"
+	// s += Line("aiueo") + "\n\n"
+	// s += Line("かきくけこ") + "\n\n"
+	// s += Line("さしすせそ") + "\n\n"
+	// s += Line("たちつてと") + "\n\n"
+	// s += Line("なにぬねの") + "\n\n"
+	// s += Line("はひふへほ") + "\n\n"
+	// s += Line("まみむめも") + "\n\n"
+	// s += Line("や ゆ　よ") + "\n\n"
+	// s += Line("らりるれろ") + "\n\n"
+	// s += Line("") + "\n\n"
+	// s += Line("") + "\n\n"
+	// s += Line("") + "\n\n"
+	// s += Line("") + "\n\n"
+	// s += Line("") + "\n\n"
+	// s += Line("") + "\n\n"
+
 	s += fmt.Sprintf(" %v  %v  %v  %v  %v\n\n", "a", "i", "u", "e", "o")
 	s += fmt.Sprintf(" %v %v %v %v %v\n\n", link(a), link(i), link(u), link(e), link(o))
 	s += fmt.Sprintf("k%v %v %v %v %v\n\n", link(ka), link(ki), link(ku), link(ke), link(ko))
@@ -109,9 +150,25 @@ func Hiragana() (string, error) {
 	s += fmt.Sprintf("py%vu%vo%v\n", link(pya), link(pyu), link(pyo))
 	s += "\n\n"
 	s += "# Greetings"
+
+	s += "\n\n"
+	return s, nil
+}
+
+func Line(s string) string {
+	chars := strings.Split(s, "")
+	return strings.Join(chars, "\t")
+}
+func Greetings() (string, error) {
+	s := "# Greetings"
 	s += "\n\nHello\t Konnichiwa \t こんにちわ。"
 	s += "\n\nGood morning\t Ohayoo\t おはよう。"
 	s += "\n\nOyaho gozaimasu\tおはようございます。"
+	return s, nil
+}
+
+func Phrases() (string, error) {
+	s := "## Common Phrases"
 	s += "\n\nThank you very much\t Arigato gozaimasu\t ありがとございます。"
 	s += "\n\nIs that so \t Sou desu ka\t そうですか。"
 	s += "\n\nExcuse me\\I am sorry \t Sumimasen \t すみません"

@@ -7,3 +7,9 @@ var katakana = map[string]string{
 	"e": "エ",
 	"o": "オ",
 }
+
+const welcome = "ようこす"
+const crab = "かに"
+const tonkatsu = "とんかつ"
+const kusuri = "くすり"
+const spa = "ゆ"

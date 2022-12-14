@@ -127,9 +127,6 @@ func Hiragana() (string, error) {
 	s += fmt.Sprintf("by%vu%vo%v\n\n", link(bya), link(byu), link(byo))
 	s += fmt.Sprintf("py%vu%vo%v\n", link(pya), link(pyu), link(pyo))
 	s += "\n\n"
-	s += "# Greetings"
-
-	s += "\n\n"
 	return s, nil
 }
 

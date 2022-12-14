@@ -74,6 +74,7 @@ by[びゃ](https://www.kakimashou.com/dictionary/character/びゃ)u[びゅ](http
 py[ぴゃ](https://www.kakimashou.com/dictionary/character/ぴゃ)u[ぴゅ](https://www.kakimashou.com/dictionary/character/ぴゅ)o[ぴょ](https://www.kakimashou.com/dictionary/character/ぴょ)
 
 
+![Hiragana Keyboard](hiraganakeyboard.png)
 # Greetings
 
 
@@ -95,6 +96,8 @@ Oyaho gozaimasu	おはようございます。
 ## Common Phrases
 
 Thank you very much	 Arigato gozaimasu	 ありがとございます。
+
+
 
 Is that so 	 Sou desu ka	 そうですか。
 
@@ -173,4 +176,5 @@ negatives
 amari="あまり" 10%　+ ikimasen = "いきません"
 
 zenzen="ぜんぜん" 10%　+ ikimasen = "いきません"
+
 

@@ -162,7 +162,19 @@ func Particles() (string, error) {
 
 func Katakana() (string, error) {
 	s := "# Katakana\n\n"
-	s += fmt.Sprint(link(katakana["a"]))
+	s += ""
+	s += ""
+	s += ""
+	s += ""
+	s += ""
+	s += ""
+	s += ""
+	s += ""
+	s += ""
+	s += ""
+	s += ""
+	s += ""
+	s += ""
 	s += "\n\n"
 	return s, nil
 }

@@ -32,7 +32,7 @@ func main() {
 		fmt.Printf("unable to get phrases due to %v", err)
 	}
 	p2, err := Particles()
-	content := "# Class notes\nhttps://ajdrake.github.io/japanese/\n\n\n"
+	content := "# Class notes\nhttps://ajdrake.github.io/nihon-go/\n\n\n"
 	content += h + "\n\n"
 	content += k + "\n\n"
 	content += g + "\n\n"

@@ -73,6 +73,10 @@ func main() {
 	content += "amari=\"あまり\" 10%　+ ikimasen = \"いきません\"\n\n"
 	content += "zenzen=\"ぜんぜん\" 10%　+ ikimasen = \"いきません\"\n\n"
 
+	content += Counter(things)
+	content += Counter(long)
+	content += Counter(thinAndFlat)
+
 	err = os.WriteFile("README.md", []byte(content), 0755)
 	if err != nil {
 		fmt.Printf("Unable to write file: %v", err)
@@ -173,5 +177,6 @@ func Katakana() (string, error) {
 	s += ""
 	s += ""
 	s += "\n\n"
+
 	return s, nil
 }

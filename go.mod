@@ -1,4 +1,4 @@
-module github.com/ajdrake/nihongo
+module github.com/ajdrake/nihon-go
 
 go 1.19
 

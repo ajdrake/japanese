@@ -146,6 +146,12 @@ func Greetings() (string, error) {
 	return s, nil
 }
 
+func AnEventWillTakePlace() string {
+	s := ""
+	s += "ありほす"
+	return s
+}
+
 func Phrases() (string, error) {
 	s := "## Common Phrases"
 	s += "\n\nThank you very much\t Arigato gozaimasu\t ありがとございます。"

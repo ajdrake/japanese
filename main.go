@@ -165,6 +165,10 @@ func XisY() string {
 	return "X は Y です"
 }
 
+func ThereIsThereAre() string {
+	return "があいほす/いほす"
+}
+
 func Particles() (string, error) {
 	s := "## Particles\n\n"
 	s += "と is a connector word like \"and.\" Aaron and Aki. Aaron と Aki."

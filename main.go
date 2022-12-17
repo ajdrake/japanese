@@ -169,7 +169,7 @@ func Particles() (string, error) {
 
 func Katakana() (string, error) {
 	s := "# Katakana\n\n"
-	s += ""
+	s += "アイウエオ"
 	s += ""
 	s += ""
 	s += ""

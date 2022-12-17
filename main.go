@@ -161,6 +161,10 @@ func Phrases() (string, error) {
 	return s, nil
 }
 
+func XisY() string {
+	return "X は Y です"
+}
+
 func Particles() (string, error) {
 	s := "## Particles\n\n"
 	s += "と is a connector word like \"and.\" Aaron and Aki. Aaron と Aki."

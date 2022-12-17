@@ -110,7 +110,7 @@ func Hiragana() (string, error) {
 	s += "remember r sounds like l in　にほんご\n\n"
 	s += fmt.Sprintf("r%v %v %v %v %v\n\n", link(ra), link(ri), link(ru), link(re), link(ro))
 	// Note that wi wu we wo do not exist in ひらがな
-	s += fmt.Sprintf("w%v            \n\n", link(wa))
+	s += fmt.Sprintf("w%v          %v\n\n", link(wa), link(wo))
 	s += fmt.Sprintf("n%v            \n\n", link(n))
 	s += fmt.Sprintf("g%v %v %v %v %v\n\n", link(ga), link(gi), link(gu), link(ge), link(ggo))
 	s += fmt.Sprintf("z%vji%v %v %v %v\n\n", link(za), link(ji), link(zu), link(ze), link(zo))

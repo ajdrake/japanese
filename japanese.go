@@ -68,6 +68,7 @@ const (
 
 	// w
 	wa string = "わ"
+	wo string = "を"
 	// no wi in nihongo　ひらがな
 	// no wu in nihongo ひらがな
 	// no we in ひらがな

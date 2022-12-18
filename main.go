@@ -73,10 +73,6 @@ func main() {
 	content += "amari=\"あまり\" 10%　+ ikimasen = \"いきません\"\n\n"
 	content += "zenzen=\"ぜんぜん\" 10%　+ ikimasen = \"いきません\"\n\n"
 
-	content += Counter(things)
-	content += Counter(long)
-	content += Counter(thinAndFlat)
-
 	err = os.WriteFile("README.md", []byte(content), 0755)
 	if err != nil {
 		fmt.Printf("Unable to write file: %v", err)
@@ -95,6 +91,14 @@ func Hiragana() (string, error) {
 	s += "Namae wa Aaron desu\n\n"
 	s += "なまえわアアロンです。\n\n"
 	s += "[Japan Society](https://www.japansociety.org)\n\n"
+	s += `mimashita\n
+	metropolis をみました\n
+	えんじにあ\n
+	
+	にねんまえ ni nenn mae\n
+	わたしは　くろさわ　かんとくの　えいが　が　すきです soo ki desu\n`
+	s += "[Kinokuniya](http://www.kinokuniya.com)\n\n"
+	s += "[Kinokuniya Books US Stores](https://usa.kinokuniya.com/stores-kinokuniya)"
 	s += "[Genki Textbook Study Resources](https://sethclydesdale.github.io/genki-study-resources/lessons-3rd)"
 	s += "\n# Hiragana\n\n"
 	s += fmt.Sprintf(" %v  %v  %v  %v  %v\n\n", "a", "i", "u", "e", "o")
@@ -167,6 +171,14 @@ func XisY() string {
 
 func ThereIsThereAre() string {
 	return "があいほす/いほす"
+}
+
+func Explosion() string {
+	return "ばくはつ"
+}
+
+func ExplosionRomanji() string {
+	return "bakuhatsu"
 }
 
 func Particles() (string, error) {

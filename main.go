@@ -91,15 +91,9 @@ func Hiragana() (string, error) {
 	s += "Namae wa Aaron desu\n\n"
 	s += "なまえわアアロンです。\n\n"
 	s += "[Japan Society](https://www.japansociety.org)\n\n"
-	s += `mimashita\n
-	metropolis をみました\n
-	えんじにあ\n
-	
-	にねんまえ ni nenn mae\n
-	わたしは　くろさわ　かんとくの　えいが　が　すきです soo ki desu\n`
 	s += "[Kinokuniya](http://www.kinokuniya.com)\n\n"
-	s += "[Kinokuniya Books US Stores](https://usa.kinokuniya.com/stores-kinokuniya)"
-	s += "[Genki Textbook Study Resources](https://sethclydesdale.github.io/genki-study-resources/lessons-3rd)"
+	s += "[Kinokuniya Books US Stores](https://usa.kinokuniya.com/stores-kinokuniya)\n\n"
+	s += "[Genki Textbook Study Resources](https://sethclydesdale.github.io/genki-study-resources/lessons-3rd)\n\n"
 	s += "\n# Hiragana\n\n"
 	s += fmt.Sprintf(" %v  %v  %v  %v  %v\n\n", "a", "i", "u", "e", "o")
 	s += fmt.Sprintf(" %v %v %v %v %v\n\n", link(a), link(i), link(u), link(e), link(o))
@@ -148,6 +142,16 @@ func Greetings() (string, error) {
 	s += "\n\nGood morning\t Ohayoo\t おはよう。"
 	s += "\n\nOyaho gozaimasu\tおはようございます。"
 	return s, nil
+}
+
+func Metropolis() string {
+	s := `mimashita\n
+	metropolis をみました\n
+	えんじにあ\n
+	
+	にねんまえ ni nenn mae\n
+	わたしは　くろさわ　かんとくの　えいが　が　すきです soo ki desu\n`
+	return s
 }
 
 func AnEventWillTakePlace() string {

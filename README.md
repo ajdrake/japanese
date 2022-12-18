@@ -12,14 +12,13 @@ Hijimemashite. Aaron desu.
 
 [Japan Society](https://www.japansociety.org)
 
-mimashita\n
-	metropolis をみました\n
-	えんじにあ\n
-	
-	にねんまえ ni nenn mae\n
-	わたしは　くろさわ　かんとくの　えいが　が　すきです soo ki desu\n[Kinokuniya](http://www.kinokuniya.com)
+[Kinokuniya](http://www.kinokuniya.com)
 
-[Kinokuniya Books US Stores](https://usa.kinokuniya.com/stores-kinokuniya)[Genki Textbook Study Resources](https://sethclydesdale.github.io/genki-study-resources/lessons-3rd)
+[Kinokuniya Books US Stores](https://usa.kinokuniya.com/stores-kinokuniya)
+
+[Genki Textbook Study Resources](https://sethclydesdale.github.io/genki-study-resources/lessons-3rd)
+
+
 # Hiragana
 
  a  i  u  e  o

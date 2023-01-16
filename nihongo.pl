@@ -2,7 +2,9 @@
 
 sub nihongo() 
 {
-    print 'にほんご';
+    for ( $i = 0; $i < 10; $i++ ) {
+        print 'にほんご';
+    }
 }
 
 nihongo();

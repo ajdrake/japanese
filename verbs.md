@@ -161,14 +161,4 @@ you need to use it in the -te form plus います(imasu), as in 知っていま�
 さしすせそ
 尺すらせそ
 さしすせそ
-
-
-
-
-
-
-
-
-
-
 ```

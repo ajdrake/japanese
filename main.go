@@ -10,7 +10,7 @@ func main() {
 
 	// TODO : add kanji
 	// TODO : add numbers 1-100, and higher
-	// TODO : add mastering the use of ni using time
+	// TODO : add mastering the use of に using time
 	// TODO : add time
 	// TODO : add vocabulary
 	// TODO : add page 127 for days, weeks, months, years, time

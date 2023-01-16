@@ -46,8 +46,10 @@ sub print_nihongo() {
                     my $cell = $sheet->{Cells}[$row][$col];
                     if ($cell) {
                         printf( "%s\n", $cell->{Val} );
+                        
                     }
                 }
+                printf("\n")
             }
         }
     }

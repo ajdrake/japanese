@@ -1,9 +1,21 @@
 #!/usr/bin/perl -l
+use strict;
+use warnings;
 
+use LWP::Simple;
+use File::Fetch;
+# my $url = 'http://www.example.com/file.txt';
 sub nihongo() 
 {
-    for ( $i = 0; $i < 10; $i++ ) {
-        print 'にほんご';
+    for ( my $i = 0; $i <= 23; $i++ ) {
+        # retrieve the lesson xlsx
+        
+        my $lesson = 'https://github.com/SethClydesdale/genki-study-resources/raw/master/resources/tools/wordlist_E-J/lessons-3rd/lesson-' . $i . '.xlsx';
+        # print $lesson;
+        my $file = 'lesson'.$i.'.xlsx';
+        # getstore($lesson, $file);
+        my $ff = File::Fetch->new(uri => $lesson);
+        my $file = $ff->fetch() or die $ff->error;
     }
 }
 

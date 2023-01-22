@@ -1,5 +1,5 @@
 Verb Conjugation
-|verb types|dictionary forms|long forms|te-forms|short past|short present neg.|short past neg.|
+|verb types|dictionary forms|pres. affm./long forms|te-forms|short past|short present neg.|short past neg.|
 |-|-|-|-|-|-|-----------------|
 |irr|する|します|して|した|しない|しなかった|
 |irr|くる|きます|きて|きた|こない|こなかった|

@@ -35,7 +35,7 @@ func main() {
 		cleaned := strings.TrimSuffix(strings.TrimSpace(english), "\n")
 		fmt.Print()
 		match := Find(englishVerbs, cleaned)
-		// convert CRLF to LF
+		fmt.Println(match)
 		fmt.Println(verbs[match])
 
 	}

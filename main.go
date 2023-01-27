@@ -3,11 +3,16 @@ package main
 import (
 	"fmt"
 	"os"
+	"strconv"
 	"strings"
+
+	"github.com/xuri/excelize/v2"
 )
 
 func main() {
-
+	for i := 1; i <= 23; i++ {
+		FindVerbsInLessons(i)
+	}
 	// TODO : add kanji
 	// TODO : add numbers 1-100, and higher
 	// TODO : add mastering the use of に using time
@@ -209,4 +214,39 @@ func Katakana() (string, error) {
 	s += "\n\n"
 
 	return s, nil
+}
+
+func FindVerbsInLessons(lessonNum int) {
+	f, err := excelize.OpenFile(fmt.Sprintf("./lessons/lesson-%s.xlsx", strconv.Itoa(lessonNum)))
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	defer func() {
+		// Close the spreadsheet.
+		if err := f.Close(); err != nil {
+			fmt.Println(err)
+		}
+	}()
+
+	// Get all the rows in the Sheet1.
+	rows, err := f.GetRows("Sheet")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	for _, row := range rows {
+		// for _, colCell := range row {
+		if len(row[0]) > 3 {
+			if string(row[0])[0:3] == "to " {
+				fmt.Print(string(row[0]), "\t")
+				fmt.Print(string(row[1]), "\t")
+				fmt.Println()
+				fmt.Println()
+				// fmt.Print(string(colCell), "\t")
+			}
+		}
+		// }
+	}
 }

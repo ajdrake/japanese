@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
 	"strconv"
@@ -10,14 +11,38 @@ import (
 )
 
 func main() {
+	verbs := make(map[string]string)
+
 	for i := 1; i <= 23; i++ {
-		FindVerbsInLessons(i)
+		lessonVerbs := FindVerbsInLessons(i)
+		for k, v := range lessonVerbs {
+			verbs[k] = v
+		}
+	}
+	englishVerbs := make([]string, len(verbs))
+
+	i := 0
+	for k := range verbs {
+		englishVerbs[i] = k
+		i++
+	}
+
+	reader := bufio.NewReader(os.Stdin)
+
+	for {
+		fmt.Print("-> ")
+		english, _ := reader.ReadString('\n')
+		cleaned := strings.TrimSuffix(strings.TrimSpace(english), "\n")
+		fmt.Print()
+		match := Find(englishVerbs, cleaned)
+		// convert CRLF to LF
+		fmt.Println(verbs[match])
+
 	}
 	// TODO : add kanji
 	// TODO : add numbers 1-100, and higher
 	// TODO : add mastering the use of に using time
 	// TODO : add time
-	// TODO : add vocabulary
 	// TODO : add page 127 for days, weeks, months, years, time
 
 	h, err := Hiragana()
@@ -87,7 +112,14 @@ func main() {
 func link(character string) string {
 	return fmt.Sprintf("[%v](https://www.kakimashou.com/dictionary/character/%v)", character, character)
 }
-
+func Find(slice []string, sliceItem string) string {
+	for _, item := range slice {
+		if strings.Contains(item, sliceItem) {
+			return item
+		}
+	}
+	return ""
+}
 func Hiragana() (string, error) {
 	// s := "```\n"
 	s := "How do you do? Aaron アアロン is my name\n\n"
@@ -216,11 +248,11 @@ func Katakana() (string, error) {
 	return s, nil
 }
 
-func FindVerbsInLessons(lessonNum int) {
+func FindVerbsInLessons(lessonNum int) map[string]string {
 	f, err := excelize.OpenFile(fmt.Sprintf("./lessons/lesson-%s.xlsx", strconv.Itoa(lessonNum)))
 	if err != nil {
 		fmt.Println(err)
-		return
+		return nil
 	}
 	defer func() {
 		// Close the spreadsheet.
@@ -233,20 +265,41 @@ func FindVerbsInLessons(lessonNum int) {
 	rows, err := f.GetRows("Sheet")
 	if err != nil {
 		fmt.Println(err)
-		return
+		return nil
 	}
-
+	verbs := make(map[string]string)
 	for _, row := range rows {
-		// for _, colCell := range row {
 		if len(row[0]) > 3 {
 			if string(row[0])[0:3] == "to " {
-				fmt.Print(string(row[0]), "\t")
-				fmt.Print(string(row[1]), "\t")
-				fmt.Println()
-				fmt.Println()
-				// fmt.Print(string(colCell), "\t")
+				verbs[row[0]] = row[1]
 			}
 		}
-		// }
 	}
+	fmt.Println(verbs)
+	for english, nihongo := range verbs {
+		s := []rune(nihongo)
+		if string(s[len(s)-1:]) == "る" {
+			fmt.Print(english + "\t")
+			fmt.Println(nihongo)
+			fmt.Println()
+		}
+	}
+	for english, nihongo := range verbs {
+		s := []rune(nihongo)
+		if string(s[len(s)-1:]) == "う" {
+			fmt.Print(english + "\t")
+			fmt.Println(nihongo)
+			fmt.Println()
+		}
+	}
+	// for english, nihongo := range verbs {
+	// 	s := []rune(nihongo)
+	// 	if string(s[len(s)-1:]) != "う" && string(s[len(s)-1:]) != "る" {
+	// 		fmt.Print(english + "\t")
+	// 		fmt.Println(nihongo)
+	// 		fmt.Println()
+	// 	}
+	// }
+
+	return verbs
 }

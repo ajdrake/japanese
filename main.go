@@ -32,11 +32,15 @@ func main() {
 	for {
 		fmt.Print("-> ")
 		english, _ := reader.ReadString('\n')
+		// english := "to speak"
 		cleaned := strings.TrimSuffix(strings.TrimSpace(english), "\n")
 		fmt.Print()
-		match := Find(englishVerbs, cleaned)
-		fmt.Println(match)
-		fmt.Println(verbs[match])
+		matches := Find(englishVerbs, english, cleaned)
+
+		for _, match := range matches {
+			fmt.Println(match)
+			fmt.Println(verbs[match])
+		}
 
 	}
 	// TODO : add kanji
@@ -112,13 +116,16 @@ func main() {
 func link(character string) string {
 	return fmt.Sprintf("[%v](https://www.kakimashou.com/dictionary/character/%v)", character, character)
 }
-func Find(slice []string, sliceItem string) string {
+func Find(slice []string, searchTerms ...string) []string {
+	hits := []string{}
 	for _, item := range slice {
-		if strings.Contains(item, sliceItem) {
-			return item
+		for _, searchTerm := range searchTerms {
+			if strings.Contains(item, searchTerm) {
+				hits = append(hits, item)
+			}
 		}
 	}
-	return ""
+	return hits
 }
 func Hiragana() (string, error) {
 	// s := "```\n"

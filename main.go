@@ -12,32 +12,38 @@ import (
 	"github.com/xuri/excelize/v2"
 )
 
+const (
+	Ru        = "Ru"
+	U         = "U"
+	Irregular = "Irregular"
+)
+
 type entry struct {
 	Term     string
 	Japanese string
+	Group    string
 	Forms    map[string]string
 }
 
 func main() {
-	enToJp := make(map[string]string)
-	jpToEn := make(map[string]string)
-
-	verbs := make(map[string]entry)
+	enToJp := make(map[string]entry)
+	jpToEn := make(map[string]entry)
 
 	englishVerbs := []string{}
 	japaneseVerbs := []string{}
 	for i := 1; i <= 23; i++ {
 		lessonVerbs := FindVerbsInLessons(i)
 		for k, v := range lessonVerbs {
-			enToJp[k] = v
-			jpToEn[v] = k
-			englishVerbs = append(englishVerbs, k)
-			japaneseVerbs = append(japaneseVerbs, v)
-			verbs[k] = entry{
+			e := entry{
 				Term:     k,
 				Japanese: v,
+				Group:    "",
 				Forms:    map[string]string{},
 			}
+			enToJp[k] = e
+			jpToEn[v] = e
+			englishVerbs = append(englishVerbs, k)
+			japaneseVerbs = append(japaneseVerbs, v)
 		}
 	}
 
@@ -53,21 +59,37 @@ func main() {
 		matches = append(matches, Find(japaneseVerbs, userInput, cleaned)...)
 
 		for _, match := range matches {
-			fmt.Println(enToJp[match])
-			fmt.Println(jpToEn[match])
-			entry := verbs[match]
-			//Converting to json
+			entry := enToJp[match]
+			if entry.Term == "" {
+				entry = jpToEn[match]
+			}
+
+			fmt.Printf("entry: \n %s\n", string(entry.Term))
+			fmt.Printf("entry (Japanese): \n %s\n", string(entry.Japanese))
+			fmt.Print("-> group?")
+			userInput, _ = reader.ReadString('\n')
+			entry.Group = strings.TrimSuffix(strings.TrimSpace(userInput), "\n")
+
+			fmt.Print("-> dictionary?")
+			userInput, _ = reader.ReadString('\n')
+			entry.Forms["dictionary"] = strings.TrimSuffix(strings.TrimSpace(userInput), "\n")
+
+			fmt.Print("-> present, affirmative?")
+			userInput, _ = reader.ReadString('\n')
+			entry.Forms["present, affirmative"] = strings.TrimSuffix(strings.TrimSpace(userInput), "\n")
+
+			fmt.Print("-> present, negative?")
+			userInput, _ = reader.ReadString('\n')
+			entry.Forms["present, negative"] = strings.TrimSuffix(strings.TrimSpace(userInput), "\n")
+
+			fmt.Print("-> te-form?")
+			userInput, _ = reader.ReadString('\n')
+			entry.Forms["te-form"] = strings.TrimSuffix(strings.TrimSpace(userInput), "\n")
 			pretty, err := json.MarshalIndent(entry, "", "  ")
 			if err != nil {
 				log.Fatalf(err.Error())
 			}
 			fmt.Printf("entry: \n %s\n", string(pretty))
-			fmt.Print("-> dict?")
-			userInput, _ = reader.ReadString('\n')
-			entry.Forms["dict"] = userInput
-			fmt.Print("-> present?")
-			userInput, _ = reader.ReadString('\n')
-			entry.Forms["present"] = userInput
 		}
 	}
 	// TODO : add kanji
@@ -326,14 +348,6 @@ func FindVerbsInLessons(lessonNum int) map[string]string {
 			fmt.Println()
 		}
 	}
-	// for english, nihongo := range verbs {
-	// 	s := []rune(nihongo)
-	// 	if string(s[len(s)-1:]) != "う" && string(s[len(s)-1:]) != "る" {
-	// 		fmt.Print(english + "\t")
-	// 		fmt.Println(nihongo)
-	// 		fmt.Println()
-	// 	}
-	// }
 
 	return verbs
 }

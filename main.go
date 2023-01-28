@@ -2,7 +2,9 @@ package main
 
 import (
 	"bufio"
+	"encoding/json"
 	"fmt"
+	"log"
 	"os"
 	"strconv"
 	"strings"
@@ -10,9 +12,17 @@ import (
 	"github.com/xuri/excelize/v2"
 )
 
+type entry struct {
+	Term     string
+	Japanese string
+	Forms    map[string]string
+}
+
 func main() {
 	enToJp := make(map[string]string)
 	jpToEn := make(map[string]string)
+
+	verbs := make(map[string]entry)
 
 	englishVerbs := []string{}
 	japaneseVerbs := []string{}
@@ -23,25 +33,42 @@ func main() {
 			jpToEn[v] = k
 			englishVerbs = append(englishVerbs, k)
 			japaneseVerbs = append(japaneseVerbs, v)
+			verbs[k] = entry{
+				Term:     k,
+				Japanese: v,
+				Forms:    map[string]string{},
+			}
 		}
 	}
 
 	reader := bufio.NewReader(os.Stdin)
 
 	for {
-		fmt.Print("-> ")
+		fmt.Print("-> verb?")
 		userInput, _ := reader.ReadString('\n')
+
 		cleaned := strings.TrimSuffix(strings.TrimSpace(userInput), "\n")
 		fmt.Print()
 		matches := Find(englishVerbs, userInput, cleaned)
 		matches = append(matches, Find(japaneseVerbs, userInput, cleaned)...)
 
 		for _, match := range matches {
-			fmt.Println(match)
 			fmt.Println(enToJp[match])
 			fmt.Println(jpToEn[match])
+			entry := verbs[match]
+			//Converting to json
+			pretty, err := json.MarshalIndent(entry, "", "  ")
+			if err != nil {
+				log.Fatalf(err.Error())
+			}
+			fmt.Printf("entry: \n %s\n", string(pretty))
+			fmt.Print("-> dict?")
+			userInput, _ = reader.ReadString('\n')
+			entry.Forms["dict"] = userInput
+			fmt.Print("-> present?")
+			userInput, _ = reader.ReadString('\n')
+			entry.Forms["present"] = userInput
 		}
-
 	}
 	// TODO : add kanji
 	// TODO : add numbers 1-100, and higher

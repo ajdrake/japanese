@@ -11,35 +11,35 @@ import (
 )
 
 func main() {
-	verbs := make(map[string]string)
+	enToJp := make(map[string]string)
+	jpToEn := make(map[string]string)
 
+	englishVerbs := []string{}
+	japaneseVerbs := []string{}
 	for i := 1; i <= 23; i++ {
 		lessonVerbs := FindVerbsInLessons(i)
 		for k, v := range lessonVerbs {
-			verbs[k] = v
+			enToJp[k] = v
+			jpToEn[v] = k
+			englishVerbs = append(englishVerbs, k)
+			japaneseVerbs = append(japaneseVerbs, v)
 		}
-	}
-	englishVerbs := make([]string, len(verbs))
-
-	i := 0
-	for k := range verbs {
-		englishVerbs[i] = k
-		i++
 	}
 
 	reader := bufio.NewReader(os.Stdin)
 
 	for {
 		fmt.Print("-> ")
-		english, _ := reader.ReadString('\n')
-		// english := "to speak"
-		cleaned := strings.TrimSuffix(strings.TrimSpace(english), "\n")
+		userInput, _ := reader.ReadString('\n')
+		cleaned := strings.TrimSuffix(strings.TrimSpace(userInput), "\n")
 		fmt.Print()
-		matches := Find(englishVerbs, english, cleaned)
+		matches := Find(englishVerbs, userInput, cleaned)
+		matches = append(matches, Find(japaneseVerbs, userInput, cleaned)...)
 
 		for _, match := range matches {
 			fmt.Println(match)
-			fmt.Println(verbs[match])
+			fmt.Println(enToJp[match])
+			fmt.Println(jpToEn[match])
 		}
 
 	}
